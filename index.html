@@ -83,8 +83,9 @@ nav{
 
 /* ── HERO TOP IMAGE ── */
 .hero-top-img{
-  display:flex;align-items:center;gap:1rem;
+  display:flex;align-items:flex-start;gap:1rem;
   margin-bottom:2rem;
+  user-select:none;-webkit-user-select:none;
 }
 .hero-img-wrap{
   position:relative;flex-shrink:0;
@@ -110,31 +111,36 @@ nav{
   box-shadow:0 0 8px var(--green);
 }
 .hero-img-info{
-  display:flex;flex-direction:column;gap:0.3rem;
+  display:flex;flex-direction:column;gap:0.28rem;
 }
 .hero-img-name{
   font-size:1rem;font-weight:700;color:var(--white);letter-spacing:-0.01em;
+  display:block;margin-bottom:0.3rem;
 }
 .hero-img-sub{
-  font-size:0.75rem;color:rgba(255,255,255,0.5);
-  display:flex;align-items:center;gap:0.35rem;flex-wrap:wrap;
+  font-size:0.75rem;color:rgba(255,255,255,0.55);
+  display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;
+  margin-bottom:0.35rem;
 }
 .hero-img-sub i{color:var(--cyan);font-size:0.7rem}
 .hero-img-badge{
   display:inline-flex;align-items:center;gap:0.35rem;
   font-size:0.72rem;color:var(--gold);
-  background:rgba(245,158,11,0.08);
-  border:1px solid rgba(245,158,11,0.2);
-  padding:0.25rem 0.7rem;border-radius:20px;
+  background:rgba(245,158,11,0.1);
+  border:1px solid rgba(245,158,11,0.25);
+  padding:0.22rem 0.65rem;border-radius:20px;
   font-weight:500;width:fit-content;
+  margin-bottom:0.3rem;
+  user-select:none;-webkit-user-select:none;
 }
 .hero-uae-ready{
   display:inline-flex;align-items:center;gap:0.35rem;
   font-size:0.72rem;color:var(--green);font-weight:600;
-  background:rgba(16,185,129,0.08);
-  border:1px solid rgba(16,185,129,0.2);
-  padding:0.25rem 0.7rem;border-radius:20px;
+  background:rgba(16,185,129,0.1);
+  border:1px solid rgba(16,185,129,0.25);
+  padding:0.22rem 0.65rem;border-radius:20px;
   width:fit-content;
+  user-select:none;-webkit-user-select:none;
 }
 
 /* ── HERO ── */
