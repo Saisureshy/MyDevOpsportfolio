@@ -81,6 +81,49 @@ nav{
 .nav-cta:hover{opacity:0.85}
 .hamburger{display:none;background:none;border:none;color:var(--white);font-size:1.4rem;cursor:pointer}
 
+/* ── HERO TOP IMAGE ── */
+.hero-top-img{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:2rem;
+}
+.hero-img-wrap{
+  position:relative;flex-shrink:0;
+}
+.hero-top-photo{
+  width:80px;height:80px;border-radius:50%;object-fit:cover;
+  border:2px solid var(--cyan);display:block;
+  box-shadow:0 0 0 5px rgba(6,182,212,0.12),0 8px 32px rgba(0,0,0,0.4);
+}
+.hero-img-ring{
+  position:absolute;inset:-5px;border-radius:50%;
+  border:1px solid rgba(6,182,212,0.25);
+  animation:pulse-ring 2.5s ease-in-out infinite;
+}
+@keyframes pulse-ring{
+  0%,100%{transform:scale(1);opacity:0.5}
+  50%{transform:scale(1.06);opacity:1}
+}
+.hero-online-dot{
+  position:absolute;bottom:3px;right:3px;
+  width:14px;height:14px;background:var(--green);
+  border-radius:50%;border:2px solid var(--bg);
+  box-shadow:0 0 8px var(--green);
+}
+.hero-img-info{
+  display:flex;flex-direction:column;gap:0.3rem;
+}
+.hero-img-name{
+  font-size:1rem;font-weight:700;color:var(--white);letter-spacing:-0.01em;
+}
+.hero-img-badge{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  font-size:0.72rem;color:var(--gold);
+  background:rgba(245,158,11,0.08);
+  border:1px solid rgba(245,158,11,0.2);
+  padding:0.25rem 0.7rem;border-radius:20px;
+  font-weight:500;width:fit-content;
+}
+
 /* ── HERO ── */
 #hero{
   min-height:100vh;display:flex;align-items:center;
@@ -587,6 +630,17 @@ section:not(#hero){padding:6rem 3rem;position:relative;z-index:2}
   <div class="hero-bg-glow"></div>
   <div class="hero-bg-glow2"></div>
   <div class="hero-inner">
+    <div class="hero-top-img">
+      <div class="hero-img-wrap">
+        <img src="./assets/Saisureshy.png" alt="Saisuresh Yerragogu" class="hero-top-photo"/>
+        <div class="hero-img-ring"></div>
+        <div class="hero-online-dot"></div>
+      </div>
+      <div class="hero-img-info">
+        <span class="hero-img-name">Saisuresh Yerragogu</span>
+        <span class="hero-img-badge"><i class="bi bi-geo-alt-fill"></i> Available for UAE · Visa Sponsorship Required</span>
+      </div>
+    </div>
     <div class="hero-eyebrow">Senior Cloud &amp; DevOps Engineer</div>
     <h1 class="hero-name">
       <div class="line1">SAISURESH</div>
@@ -604,7 +658,6 @@ section:not(#hero){padding:6rem 3rem;position:relative;z-index:2}
     <div class="hero-actions">
       <a href="https://www.linkedin.com/in/saisuresh-yerragogu-devops/" target="_blank" class="btn-primary"><i class="bi bi-linkedin"></i> LinkedIn Profile</a>
       <a href="mailto:ysaisuresh333@gmail.com" class="btn-outline"><i class="bi bi-envelope"></i> Get In Touch</a>
-      <a href="https://saisureshy.github.io/MyDevOpsportfolio" target="_blank" class="btn-outline"><i class="bi bi-globe"></i> Portfolio</a>
     </div>
     <div class="stats-row">
       <div class="stat"><span class="stat-val">9+</span><span class="stat-lbl">Years Experience</span></div>
